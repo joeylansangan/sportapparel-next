@@ -1,3 +1,26 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+    .link{
+        @apply cursor-pointer uppercase tracking-wider
+    }
+}
+
+@font-face {
+    font-family: 'AdihausDIN';
+    src: url(../fonts/adihaus.ttf) format('truetype');
+  }
+@font-face {
+font-family: 'AdihausBold';
+src: url(../fonts/adihausBold.ttf) format('truetype');
+}
+
+html, body{
+    font-family: 'AdihausDIN', Arial, Helvetica, sans-serif;
+  }
+
+.adiBold{
+    font-family: 'AdihausBold', Arial, Helvetica, sans-serif;
+}
