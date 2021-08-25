@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
@@ -37,3 +38,7 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 # sportapparel-next
 online sports apparel store - REACT, REDUX, NEXTJS, TAILWINDCSS
 >>>>>>> b40e506... Initial commit
+=======
+# sportapparel-next
+online sports apparel store - REACT, REDUX, NEXTJS, TAILWINDCSS
+>>>>>>> b40e5063a3dedea23b218838e3db9f1427371550
