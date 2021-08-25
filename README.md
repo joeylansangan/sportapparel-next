@@ -1,5 +1,8 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+# sportapparel-next
+Online Sports Apparel store - REACT, REDUX, NEXTJS, TAILWINDCSS
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
@@ -35,10 +38,3 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
 =======
-# sportapparel-next
-online sports apparel store - REACT, REDUX, NEXTJS, TAILWINDCSS
->>>>>>> b40e506... Initial commit
-=======
-# sportapparel-next
-online sports apparel store - REACT, REDUX, NEXTJS, TAILWINDCSS
->>>>>>> b40e5063a3dedea23b218838e3db9f1427371550
