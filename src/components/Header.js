@@ -66,10 +66,11 @@ function Header() {
                 <p className="link">Men</p>
                 <p className="link">Women</p>
                 <p className="link">Kids</p>
-                <p className="link">Back to School</p>
-                <p className="link">3 Strip Life</p>
+                <p className="link hidden lg:inline-flex">Back to School</p>
+                <p className="link hidden lg:inline-flex">3 Strip Life</p>
+                <p className="text-xs flex items-center">also visit<img className="ml-2" width="52px" height="12px" src="./assets/reeboklogo.png"alt="reebok"/></p>
             </div>
-            
+
         </header>
     )
 }

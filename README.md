@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
 # sportapparel-next
 Online Sports Apparel store - REACT, REDUX, NEXTJS, TAILWINDCSS
 
