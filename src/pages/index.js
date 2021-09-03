@@ -1,47 +1,44 @@
 import Head from 'next/head'
 import Banner from '../components/Banner'
+import Footer from '../components/Footer'
 import Header from '../components/Header'
+import Highlights from '../components/Highlights'
+import ImgMenu from '../components/ImgMenu'
+import Popular from '../components/Popular'
 import ProductFeed from '../components/ProductFeed'
-import axios from 'axios';
+import SignupBanner from '../components/SignupBanner'
 
-export default function Home({ products }) {
+export default function Home({products}) {
   // console.log(products)
   return (
     <div >
       <Head>
         <title>Adidas Next</title>
       </Head>
-
       <Header />
-
       <main className="max-w-screen-2xl mx-auto">
         <Banner />
+        <Popular />
+        <ImgMenu/>
+        <h1 className="uppercase adiBold text-3xl my-5 ml-5 tracking-wider">What's trending</h1>
         <ProductFeed products={products}/>
+
+        <Highlights/>
+        <SignupBanner />
+        <Footer/>
       </main>
     </div>
   )
 }
 
-export async function getServerSideProps(context) {
-
-  // const options = {
-  //   method: 'GET',
-  //   url: 'https://the-sneaker-database.p.rapidapi.com/sneakers',
-  //   params: {limit: '25'},
-  //   headers: {
-  //     'x-rapidapi-host': 'the-sneaker-database.p.rapidapi.com',
-  //     'x-rapidapi-key': '8c0deb8a3cmsh3c8bfc1c21112b1p165876jsn65a9926a8bee'
-  //   }
-  // };
-
-  const response = await fetch('https://fakestoreapi.com/products')
-
-  const data = await response.json()
-
-    return {
-      props: {
-        products: data
-      }
-    }
+export async function getServerSideProps(context){
+  const products = await fetch('https://fakestoreapi.com/products');
   
-}
+  const data = await products.json();
+
+  return {
+    props: {
+      products: data
+    }
+  }
+} 

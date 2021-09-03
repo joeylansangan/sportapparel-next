@@ -1,17 +1,18 @@
 import React, {useState} from 'react';
 import Image from 'next/image';
 
-function Product({ id, title, price, description, category, image }) {
-
-    const noImage = "http://www.torontowaterfrontmarathon.com/wp-content/uploads/2018/11/ComingSoon-square.jpg"
-    
+function Product({id, image, title, price, category}) {
     return (
-        <div>
-            <div >
+        <a className="cursor-pointer">
+            <div className="bg-white py-4 flex justify-center">
+                <Image src={image} width={150} height={150} objectFit="contain"/>
+            </div>
+            <div className="p-2">
                 <p>{title}</p>
-                {/* <Image src={image ? image : noImage } /> */}
-            </div>            
-        </div>
+                <p className="text-gray-500 capitalize">{category}</p>
+                <p> ${price}</p>
+             </div>
+        </a>
     )
 }
 

@@ -12,21 +12,26 @@ import {
 
 function Header() {
 
-    const iconStyle = {
+    const whiteIcon = {
         color: "white",
     }
-
+    const blackIcon = {
+        color: "black",
+        width:"21px",
+        height:"21px",
+        marginRight: "1rem"
+    }
     return (
         <header className="border-b-2 pb-4">
             {/* top nav */}
             <div className="flex flex-grow justify-center bg-black items-center">
                 <div className="flex items-center text-white space-x-1">
 
-                  <MdLocalShipping style={iconStyle}/>
+                  <MdLocalShipping style={whiteIcon}/>
                     <span>FREE STANDARD SHIPPING & RETURNS | JOIN NOW</span>
                 </div>
             </div>
-            <div className="flex items-center p-1 flex-grow py-2">
+            <div className="flex items-center p-1 flex-grow pt-4">
                 <div className="flex items-center flex-grow sm:flex-grow-0 mx-6">
                     <Image 
                         src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Adidas_Logo.svg/2560px-Adidas_Logo.svg.png"
@@ -43,26 +48,26 @@ function Header() {
                         className="p-2 h-full w-6 flex-grow flex-shrink bg-gray-100 focus:outline-none px-4" 
                         type="text" 
                     />
-                    <SearchIcon className="h-14 p-4"/>
+                    <SearchIcon style={blackIcon}/>
                 </div>
 
                 <div className="flex items-center text-xs space-x-0.5 mx-6">
                     <div className="link">
-                        <UserIcon className="h-14 p-4"/>
+                        <UserIcon style={blackIcon}/>
                     </div>
                     <div className="link">
-                        <ArchiveIcon className="h-14 p-4"/>
+                        <ArchiveIcon style={blackIcon}/>
                     </div>
                     <div className="relative link">
                         <span className="absolute top-2 right-2 h-4 w-4 bg-yellow-200 rounded-full text-center ">0</span>
-                        <ShoppingBagIcon className="h-14 p-4"/>
+                        <ShoppingBagIcon style={blackIcon}/>
                     </div>
                 </div>
             </div>  
 
             {/* bot nav */}
-            <div className="flex items-center text-transform:uppercase space-x-3 pl-6">
-                <MenuIcon className="h-6 mr-1"/>
+            <div className="flex items-center text-transform:uppercase space-x-3 pl-6 mt-3">
+                <MenuIcon style={blackIcon}/>
                 <p className="link">Men</p>
                 <p className="link">Women</p>
                 <p className="link">Kids</p>

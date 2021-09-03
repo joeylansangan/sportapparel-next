@@ -6,11 +6,27 @@ module.exports = {
   ],
   darkMode: false, // or 'media' or 'class'
   theme: {
+    height: {
+      '500px': '500px'
+    },
+    borderWidth: {
+      DEFAULT: '1px',
+      '0': '0',
+      '1': '1px',
+      '0.5': '0.5px',
+      '2': '2px',
+      '3': '3px',
+      '4': '4px',
+      '6': '6px',
+    },
     extend: {
       colors: {
-        amazon_blue: {
-          light: "#232F3E",
-          DEFAULT: "#131921"
+        adi_gray:{
+          light: "#ebeff1",
+          DEFAULT: "#363738"
+        },
+        adi_yellow: {
+          DEFAULT: "#ede734"
         }
       }
     },
