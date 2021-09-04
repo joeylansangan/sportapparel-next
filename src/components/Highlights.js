@@ -31,15 +31,16 @@ function Highlights() {
                 containerClass="carousel-container"
                 responsive={responsive}
                 dotListClass="custom-dot-list-style"
-                itemClass="carousel-item-padding-40-px mx-1 h-500px"
+                itemClass="carousel-item-padding-40-px mx-1"
             >
-            {highlights.map(({id, title, description, image}) => (
+            {highlights.map(({id, title, description, image, cta}) => (
                 <Highlight 
                     key={id}
                     id={id}
                     title={title}
                     description={description}
                     image={image}
+                    cta={cta}
                 />
             ))}
                 

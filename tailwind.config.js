@@ -6,9 +6,6 @@ module.exports = {
   ],
   darkMode: false, // or 'media' or 'class'
   theme: {
-    height: {
-      '500px': '500px'
-    },
     borderWidth: {
       DEFAULT: '1px',
       '0': '0',

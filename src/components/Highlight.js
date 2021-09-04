@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 
-function Highlight({id, title, description, image}) {
+function Highlight({id, title, description, image, cta}) {
     return (
         <div key={id} className="mx-2 flex flex-col justify-between h-full" >
             <div>
@@ -11,7 +11,7 @@ function Highlight({id, title, description, image}) {
             </div>
 
             <div>
-                <a className="uppercase underline adiBold mt-5">shop now</a>
+                <a className="uppercase underline adiBold mt-5">{cta}</a>
             </div>
         </div>
     )

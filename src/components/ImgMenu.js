@@ -5,16 +5,16 @@ function ImgMenu() {
     return (
         <div className="my-12 mx-6 flex flex-col md:flex-row justify-center">
             <div className="flex justify-center">
-                <div className="bg-adi_gray-light px-6 pb-6 m-1">
+                <div className="bg-adi_gray-light cursor-pointer transition ease-in-out 1s hover:scale-105 px-6 pb-6 m-1">
                     <Image 
-                        height={250}
+                        height={250} 
                         width={250}
                         src="https://assets.adidas.com/images/w_276,h_276,f_auto,q_auto:sensitive,fl_lossy,c_fill,g_auto/bbe7feb2146e46e39c4cad6a01124ea6_9366/Primeblue_SST_Track_Pants_Burgundy_H34580_21_model.jpg"
                         alt="women's clothing"
                     />
                     <p className="uppercase underline adiBold tracking-widest text-center">women's clothing</p>
                 </div>
-                <div className="bg-adi_gray-light px-6 pb-6 m-1">
+                <div className="bg-adi_gray-light cursor-pointer transition ease-in-out 1s hover:scale-105 px-6 pb-6 m-1">
                     <Image 
                         height={250}
                         width={250}
@@ -25,7 +25,7 @@ function ImgMenu() {
                 </div>
             </div>
            <div className="flex justify-center">
-            <div className="bg-adi_gray-light px-6 pb-6 m-1">
+            <div className="bg-adi_gray-light cursor-pointer transition ease-in-out 1s hover:scale-105 px-6 pb-6 m-1">
                     <Image 
                         height={250}
                         width={250}
@@ -34,7 +34,7 @@ function ImgMenu() {
                     />
                     <p className="uppercase underline adiBold tracking-widest text-center">women's sneakers</p>
                 </div>
-                <div className="bg-adi_gray-light px-6 pb-6 m-1">
+                <div className="bg-adi_gray-light cursor-pointer transition ease-in-out 1s hover:scale-105 px-6 pb-6 m-1">
                     <Image 
                         height={250}
                         width={250}
