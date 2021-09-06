@@ -1,6 +1,7 @@
 import React from 'react'
 import Header from '../components/Header'
 import Image from 'next/image';
+import { GoChevronDown } from "react-icons/go";
 import { AiOutlineCloseSquare } from "react-icons/ai";
 
 function cart() {
@@ -28,9 +29,13 @@ function cart() {
                                 <p>mens clothing</p>
                                 <p>$43.99</p>
                             </div>
-                            <button className="bg-black w-min tracking-widest h-10 p-6 uppercase adiBold flex justify-around items-center text-white">Checkout</button>
+                            <div className="border-0.5 border-black w-min flex align-center p-2">
+                                <span className="adiBold mr-8">1</span>
+                                <GoChevronDown size="1.5em" />
+                            </div>
+                            {/* <button className="bg-black w-min tracking-widest h-10 p-6 uppercase adiBold flex justify-around items-center text-white">Checkout</button> */}
                         </div>
-                        <AiOutlineCloseSquare className="absolute top-4 right-4 cursor-pointer" />
+                        <AiOutlineCloseSquare className="absolute top-4 right-4 cursor-pointer" size="1.5em"/>
                        
                     </div>
                     

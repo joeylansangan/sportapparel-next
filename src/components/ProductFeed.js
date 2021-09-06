@@ -34,7 +34,7 @@ function ProductFeed({products}) {
             <div style={divStyle}>
          </div>
 
-            <div className="my-10 mx-5">
+            <div className="mt-5 mb-20 mx-5">
             <Carousel
                     swipeable={true}
                     draggable={false}
@@ -49,7 +49,7 @@ function ProductFeed({products}) {
                     // removeArrowOnDeviceType={["tablet", "mobile"]}
                     // deviceType={this.props.deviceType}
                     dotListClass="custom-dot-list-style"
-                    itemClass="carousel-item-padding-40-px border-0.5 border-transparent hover:border-gray-500 m-4 bg-white"
+                    itemClass="carousel-item-padding-40-px border-0.5 border-transparent m-4 bg-white"
                 >
 
                     {products.filter(product => product.category === "women's clothing" || product.category === "men's clothing").map(

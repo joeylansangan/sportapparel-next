@@ -11,12 +11,15 @@ import {
 import { signIn, signOut, useSession } from 'next-auth/client';
 import { MdLocalShipping } from "react-icons/md";
 import { useRouter } from 'next/router';
+import { useSelector } from 'react-redux';
+import { selectItems } from '../slices/basketSlice';
 
 
 function Header() {
 
     const [session] = useSession();
     const router = useRouter();
+    const items = useSelector(selectItems)
 
     const whiteIcon = {
         color: "white",
@@ -70,7 +73,7 @@ function Header() {
                             <ArchiveIcon style={blackIcon} className="mr-3"/>
                         </div>
                         <div onClick={() => router.push("/cart")} className="relative link">
-                            <span className="absolute top-2 right-2 h-4 w-4 bg-yellow-200 rounded-full text-center ">0</span>
+                            <span className="absolute top-2 right-2 h-4 w-4 bg-yellow-200 rounded-full text-center ">{items.length}</span>
                             <ShoppingBagIcon style={blackIcon} className="mr-3"/>
                         </div>
                     </div>
