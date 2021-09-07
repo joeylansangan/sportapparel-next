@@ -23,17 +23,15 @@ function ProductFeed({products}) {
 
       const divStyle={
           width: "100%",
-          height: "50px",
-          background: "black",
+          height: "75px",
+          background: "url('https://images.unsplash.com/photo-1565476599063-a9b93037c7f0?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1406&q=80')",
           position: "absolute",
           top: "0"
       }
 
     return (
         <div className="relative">
-            <div style={divStyle}>
-         </div>
-
+            <div style={divStyle}></div>
             <div className="mt-5 mb-20 mx-5">
             <Carousel
                     swipeable={true}

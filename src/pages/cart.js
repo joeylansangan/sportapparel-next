@@ -2,15 +2,19 @@ import React, {useEffect} from 'react'
 import Header from '../components/Header'
 import Image from 'next/image';
 import { useSelector } from 'react-redux';
-import { selectItems } from '../slices/basketSlice';
+import { selectItems, selectTotal } from '../slices/basketSlice';
 import CartProduct from '../components/CartProduct';
+import { useSession } from 'next-auth/client';
 
 function cart() {
-    let total = 0;
+
     const items = useSelector(selectItems);
+    const total = useSelector(selectTotal);
+
+    const session = useSession();
 
     useEffect(() => {
-        if (items.length !== 0){
+        if (items.length > 0){
             let total = items.reduce((currentTotal, item) => {
                 return item.price + currentTotal
             })
@@ -41,9 +45,21 @@ function cart() {
                             image={item.image} 
                         />
                     ))}
-
-                    
                 </div>
+                {items.length > 0 && (
+                    <>
+                        <h2 className="whitespace-nowrap">
+                            Subtotal ({items.length} items);
+                            <span className="adiBold">
+                                ${total}
+                            </span>
+                        </h2>
+
+                        <button className="border-2 border-gray-200">
+                            {!session ? "Sign in to checkout" : "Proceed to checkout"}
+                        </button>
+                    </>
+                )}
             </div>
         </div>
     )
