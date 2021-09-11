@@ -24,7 +24,7 @@ function ProductFeed({products}) {
       const divStyle={
           width: "100%",
           height: "75px",
-          background: "url('https://images.unsplash.com/photo-1565476599063-a9b93037c7f0?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1406&q=80')",
+          background: "url('https://images.unsplash.com/photo-1541981581578-6c06955ca7c9?ixid=MnwxMjA3fDB8MHxzZWFyY2h8OTF8fHRleHR1cmV8ZW58MHwwfDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60')",
           position: "absolute",
           top: "0"
       }

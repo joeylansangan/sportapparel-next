@@ -10,6 +10,7 @@ import SignupBanner from '../components/SignupBanner'
 
 export default function Home({products}) {
   // console.log(products)
+  console.log('hello')
   return (
     <div >
       <Head>

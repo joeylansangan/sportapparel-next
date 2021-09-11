@@ -6,6 +6,10 @@ module.exports = {
   ],
   darkMode: false, // or 'media' or 'class'
   theme: {
+    height: {
+      full: '100%',
+      fit: 'fit-content'
+     },
     borderWidth: {
       DEFAULT: '1px',
       '0': '0',

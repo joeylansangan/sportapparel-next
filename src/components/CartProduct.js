@@ -28,7 +28,7 @@ function CartProduct({id, title, price, rating, description, category, image}) {
 
                 <div className="p-4 flex flex-col space-y-2 justify-between">
                     <div className="uppercase tracking-wider text-xl space-y-2">
-                        <p>{title}</p>
+                        <p className="w-11/12">{title}</p>
                         <p>{category}</p>
                         <p>${price}</p>
                     </div>
@@ -36,7 +36,7 @@ function CartProduct({id, title, price, rating, description, category, image}) {
                         <span className="adiBold mr-8">1</span>
                         <GoChevronDown size="1.5em" />
                     </div>
-                    <button className="bg-black w-min tracking-widest h-10 p-6 uppercase adiBold flex justify-around items-center text-white">Checkout</button>
+                    
                 </div>
                 <AiOutlineCloseSquare onClick={removeItemFromBasket} className="absolute top-4 right-4 cursor-pointer" size="1.5em"/>
             </div>

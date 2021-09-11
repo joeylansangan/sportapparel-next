@@ -1,4 +1,5 @@
 import React from 'react'
+import Copyright from './Copyright'
 
 function Footer() {
     return (
@@ -18,13 +19,7 @@ function Footer() {
                     <p className="cursor-pointer hover:underline mb-3 capitalize">contact us</p>
                 </div>
             </div>
-            <div className="bg-adi_gray text-gray-300 flex py-6 px-8 justify-between text-xs">
-                <p className="pointer">2021 adidas Inc.</p>
-                <div className="flex">
-                    <p className="capitalize mr-3">privacy policy</p>
-                    <p className="capitalize">terms and conditions</p>
-                </div>
-            </div>
+            <Copyright />
         </div>
     )
 }
