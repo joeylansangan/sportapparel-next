@@ -43,16 +43,16 @@ function Header() {
                 </div>
             </div>
             <div className="flex items-center p-1 justify-between flex-grow pt-4">
-                <div className="flex items-center flex-grow sm:flex-grow-0 mx-6">
+
                     <Image 
                         onClick={() => router.push("/")}
-                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Adidas_Logo.svg/2560px-Adidas_Logo.svg.png"
+                        src="/assets/snglogo.png"
                         width={60}
                         height={40}
                         objectFit='contain'
                         className="cursor-pointer"
                     />
-                </div>
+
 
                 <div style={searchStyle} className="flex justify-end items-center">
                     <div className="hidden sm:flex flex-grow items-center cursor-pointer h-10 bg-white">
@@ -69,7 +69,7 @@ function Header() {
                             <UserIcon style={blackIcon}/>
                             <span>{session ? `Hello, ${((session.user.name).split(' '))[0]}` : "Login"}</span>
                         </div>                        
-                        <div className="link flex items-center">
+                        <div onClick={() => router.push("/orders")} className="link flex items-center">
                             <ArchiveIcon style={blackIcon} className="mr-3"/>
                         </div>
                         <div onClick={() => router.push("/cart")} className="relative link">
@@ -90,7 +90,7 @@ function Header() {
                 <p className="link">Kids</p>
                 <p className="link hidden lg:inline-flex">Back to School</p>
                 <p className="link hidden lg:inline-flex">3 Strip Life</p>
-                <p className="text-xs flex items-center">also visit<img className="ml-2" width="52px" height="12px" src="./assets/reeboklogo.png"alt="reebok"/></p>
+                <a href="https://kingpong.co" className="text-xs flex items-center">also visit<img className="ml-2" width="52px" height="12px" src="./assets/kingpong.png"alt="reebok"/></a>
             </div>
 
         </header>

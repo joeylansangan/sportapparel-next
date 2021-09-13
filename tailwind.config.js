@@ -7,6 +7,8 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     height: {
+      32: '8rem',
+      20: '5rem',
       full: '100%',
       fit: 'fit-content'
      },
