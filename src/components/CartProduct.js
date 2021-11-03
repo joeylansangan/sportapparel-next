@@ -23,6 +23,7 @@ function CartProduct({id, title, price, rating, description, category, image}) {
                         width={200} 
                         height={200} 
                         objectFit="contain"
+                        alt="streetwear-item"
                     />
                 </div>
 

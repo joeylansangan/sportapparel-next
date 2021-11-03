@@ -14,7 +14,8 @@ export default function Home({products}) {
   return (
     <div >
       <Head>
-        <title>Adidas Next</title>
+        <title>Sneaks n' Geeks</title>
+        <link rel="shortcut icon" href="/assets/snglogo.png" />
       </Head>
       <Header />
       <main className="max-w-screen-2xl mx-auto">

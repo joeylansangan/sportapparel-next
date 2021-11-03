@@ -9,7 +9,7 @@ function ImgMenu() {
                     <Image 
                         height={250} 
                         width={250}
-                        src="https://assets.adidas.com/images/w_276,h_276,f_auto,q_auto:sensitive,fl_lossy,c_fill,g_auto/bbe7feb2146e46e39c4cad6a01124ea6_9366/Primeblue_SST_Track_Pants_Burgundy_H34580_21_model.jpg"
+                        src="https://assets.adidas.com/images/w_383,h_383,f_auto,q_auto:sensitive,fl_lossy,c_fill,g_auto/caba0bbad0a647d19266ac9400e207a7_9366/adicolor-primeblue-tricolor-cropped-tee.jpg"
                         alt="women's clothing"
                     />
                     <p className="uppercase underline adiBold tracking-widest text-center">women's clothing</p>
@@ -18,7 +18,7 @@ function ImgMenu() {
                     <Image 
                         height={250}
                         width={250}
-                        src="https://assets.adidas.com/images/w_280,h_280,f_auto,q_auto:sensitive/ca1a56e5d5d84d798543ac710120dcc5_9366/essentials-fleece-3-stripes-full-zip-hoodie.jpg"
+                        src="https://assets.adidas.com/images/w_383,h_383,f_auto,q_auto:sensitive,fl_lossy,c_fill,g_auto/691df217bfd3461bbae5ad57010c9d95_9366/graphics-originals-attribute-pack-hoodie.jpg"
                         alt="hoodies & sweatshirts"
                     />
                     <p className="uppercase underline adiBold tracking-widest text-center ">hoodies & sweatshirts</p>
@@ -29,7 +29,7 @@ function ImgMenu() {
                     <Image 
                         height={250}
                         width={250}
-                        src="https://assets.adidas.com/images/w_280,h_280,f_auto,q_auto:sensitive/0237690d85e3494ebb00ad1d0179aeed_9366/nmd_r1-shoes.jpg"
+                        src="https://image.goat.com/attachments/product_template_pictures/images/059/305/104/original/DH3718_101.png.png"
                         alt="women's sneakers"
                     />
                     <p className="uppercase underline adiBold tracking-widest text-center">women's sneakers</p>
@@ -38,7 +38,7 @@ function ImgMenu() {
                     <Image 
                         height={250}
                         width={250}
-                        src="https://assets.adidas.com/images/w_280,h_280,f_auto,q_auto:sensitive/d2faada175254d2ca765ac91005fd5ee_9366/ultraboost-21-shoes.jpg"
+                        src="https://image.goat.com/attachments/product_template_pictures/images/059/821/145/original/DM8156_100.png.png"
                         alt="new arrivals"
                     />
                     <p className="uppercase underline adiBold tracking-widest text-center">new arrivals</p>

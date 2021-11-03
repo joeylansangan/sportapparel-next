@@ -7,7 +7,7 @@ function SignupBanner() {
         marginLeft: '20px'
     }
     return (
-        <div className="bg-adi_yellow mt-24 flex-col sm:flex-row flex items-center justify-center py-8">
+        <div className="bg-sng_yellow mt-24 flex-col sm:flex-row flex items-center justify-center py-8">
             <div className="px-3 my-3">
                 <p className="uppercase text-3xl adiBold text-center">Join our creators club & get 15% off</p>
             </div>

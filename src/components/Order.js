@@ -27,8 +27,8 @@ function Order({ id, amount, amountShipping, items, timestamp, images }) {
             </div>
             <div className="p-5 flex justify-between">
                 <div className="flex space-x-6 overflow-x-auto">
-                    {images.map((image) => (
-                        <img src={image} alt="shop-item" className="h-20 object-contain sm:h-32" />
+                    {images.map((image, idx) => (
+                        <img key={idx} src={image} alt="shop-item" className="h-20 object-contain sm:h-32" />
                     ))}
                 </div>
                 <div className="space-y-4 w-36">
@@ -40,6 +40,7 @@ function Order({ id, amount, amountShipping, items, timestamp, images }) {
                     </button>
                 </div>
             </div>
+
         </div>
     )
 }

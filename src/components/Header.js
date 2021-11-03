@@ -51,6 +51,7 @@ function Header() {
                         height={40}
                         objectFit='contain'
                         className="cursor-pointer"
+                        alt="streatwear-logo"
                     />
 
 
@@ -73,7 +74,7 @@ function Header() {
                             <ArchiveIcon style={blackIcon} className="mr-3"/>
                         </div>
                         <div onClick={() => router.push("/cart")} className="relative link">
-                            <span className="absolute top-2 right-2 h-4 w-4 bg-yellow-200 rounded-full text-center ">{items.length}</span>
+                            <span className="absolute top-2 right-2 h-4 w-4 bg-sng_yellow rounded-full text-center ">{items.length}</span>
                             <ShoppingBagIcon style={blackIcon} className="mr-3"/>
                         </div>
                     </div>

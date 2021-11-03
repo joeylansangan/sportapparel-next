@@ -28,8 +28,9 @@ module.exports = {
           light: "#ebeff1",
           DEFAULT: "#363738"
         },
-        adi_yellow: {
-          DEFAULT: "#ede734"
+        sng_yellow: {
+          DEFAULT: "#FFAD05",
+          light: "#ede734"
         }
       }
     },

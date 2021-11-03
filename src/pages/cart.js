@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react'
+import React, {useEffect} from 'react'
 import Header from '../components/Header'
 import CartProduct from '../components/CartProduct';
 import { useSelector } from 'react-redux';

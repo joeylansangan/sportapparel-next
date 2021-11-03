@@ -24,7 +24,7 @@ function Product({id, image, title, price, category}) {
         <div className="h-full flex flex-col justify-between">
             <div>
                 <div className="bg-white py-4 flex justify-center">
-                    <Image src={image} width={150} height={150} objectFit="contain"/>
+                    <Image src={image} width={150} height={150} objectFit="contain" alt="streetwear-item"/>
                 </div>
                 <div className="p-2">
                     <p>{title}</p>

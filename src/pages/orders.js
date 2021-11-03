@@ -4,10 +4,12 @@ import React from 'react';
 import Header from '../components/Header';
 import db from '../../firebase';
 import Order from '../components/Order';
+import Footer from '../components/Footer';
 
 function orders({ orders }) {
-    // console.log(orders)
+    console.log(orders)
     const [session] = useSession();
+    console.log(session)
 
     return (
         <div>
@@ -15,7 +17,7 @@ function orders({ orders }) {
             <div className="p-6">
                 <h2 className="uppercase adiBold text-2xl tracking-wider">Your Orders</h2>
                 {session ? (
-                    <h2>{orders.length} orders placed</h2>
+                    <h2>orders placed</h2>
                 ) : (
                     <h2>Please sign in to ssee your orders </h2>
                 )}
@@ -34,7 +36,7 @@ function orders({ orders }) {
                     ))}
                 </div>
             </div>
-            
+            <Footer />
         </div>
     )
 }
