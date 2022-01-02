@@ -37,6 +37,7 @@
     "tailwindcss": "^2.2.7"
   },
   "browser":{
+    "fs": false,
     "child_process": false
     }  
 }
