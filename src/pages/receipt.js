@@ -1,6 +1,5 @@
 import React from 'react'
 import Link from 'next/link'
-import { CgArrowLongRight } from "react-icons/cg";
 import Header from '../components/Header'
 import Copyright from '../components/Copyright'
 
@@ -16,8 +15,7 @@ function receipt() {
             <h3 className="text-xl adiBold mb-2">What's next?</h3>
             <p className="text-lg">If you would like to check the status of your order(s) please press the link below.</p>
             <Link href="/orders" className="bg-black w-full tracking-widest h-10 p-6 uppercase adiBold items-center text-white flex justify-between my-6">
-                    <span>Go to my orders</span>
-                    <CgArrowLongRight />
+                    <span className='hover:underline cursor-pointer'>Go to my orders</span>
                 </Link>
         </div>
         <Copyright/>
