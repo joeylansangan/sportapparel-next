@@ -5,7 +5,6 @@ import Copyright from '../components/Copyright';
 import Header from '../components/Header';
 
 function success() {
-    const router = useRouter();
     
     return (
         <div>
