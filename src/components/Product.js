@@ -16,7 +16,7 @@ function Product({id, image, title, price, category}) {
             category,
             image
         }
-
+        // alert(`${product.title} successfully added to bag!`)
         dispatch(addToBasket(product))
     }
 
